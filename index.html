@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trotpen Tech Agency | Professional Web Design in Abuja</title>
+<meta name="description" content="Trotpen Tech Agency builds modern, responsive websites for small businesses in Abuja and across Nigeria.">
+<meta property="og:title" content="Trotpen Tech Agency | Professional Web Design in Abuja">
+<meta property="og:description" content="Modern, responsive websites for small businesses in Abuja and across Nigeria.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B1020">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B1020;--panel:#141B33;--line:#26304f;--text:#EDF0FA;--mute:#9AA5C4;--gold:#F2B84B;--wa:#25D366}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--text);font:400 1rem/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.15}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:10px}
+.lead{color:var(--mute);max-width:60ch;margin-bottom:32px}
+header{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font:800 1.2rem "Bricolage Grotesque",sans-serif;text-decoration:none}
+.logo span{color:var(--gold)}
+nav ul{display:flex;gap:20px;list-style:none;padding:0}
+nav a{text-decoration:none;color:var(--mute);font-size:.92rem}
+nav a:hover{color:var(--text)}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:700;text-decoration:none;border:2px solid var(--gold);background:var(--gold);color:#0B1020;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:6px 12px;font-size:1rem}
+.hero{padding:88px 0 72px}
+.hero h1{font-size:clamp(2.3rem,6.5vw,4.2rem);max-width:15ch;margin-bottom:18px}
+.hero p{color:var(--mute);max-width:56ch;font-size:1.1rem;margin-bottom:28px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.ticks{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:36px;color:var(--mute);font-size:.95rem;list-style:none;padding:0}
+.ticks li::before{content:"✓ ";color:var(--gold)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px}
+.card h3{font-size:1.2rem;margin-bottom:6px}
+.card p{color:var(--mute);font-size:.96rem}
+.tag{display:inline-block;font-size:.8rem;color:var(--gold);margin-bottom:8px}
+.card .btn{margin-top:16px;padding:9px 18px;font-size:.92rem}
+.soon{display:inline-block;margin-top:16px;color:var(--mute);font-size:.9rem;border:1px dashed var(--line);border-radius:8px;padding:9px 18px}
+.steps{counter-reset:s;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.steps .card::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--gold);color:#0B1020;font-weight:800;margin-bottom:12px}
+.price{font:800 1.9rem "Bricolage Grotesque",sans-serif;margin:6px 0 12px}
+.card ul{padding-left:18px;color:var(--mute);font-size:.94rem}
+.hot{border-color:var(--gold)}
+details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--mute);margin-top:10px}
+.cta{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:44px 28px;text-align:center}
+.cta p{color:var(--mute);margin:10px auto 24px;max-width:50ch}
+.cta .row{justify-content:center}
+.btn.wa{background:var(--wa);border-color:var(--wa)}
+form{display:grid;gap:14px;margin-top:8px}
+.two{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+label{display:grid;gap:6px;font-size:.9rem;color:var(--mute)}
+input,select,textarea{background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:12px;font:inherit}
+.note{font-size:.88rem;color:var(--mute)}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mute);font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+@media(max-width:760px){
+ .menu{display:block}
+ nav ul{display:none;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:var(--bg);padding:16px 20px;border-bottom:1px solid var(--line)}
+ nav ul.open{display:flex}
+ .nav>.btn{display:none}
+ section{padding:52px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#home">Trot<span>pen</span> Tech Agency</a>
+  <nav aria-label="Main">
+   <ul id="links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Trotpen</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+  </nav>
+  <a class="btn" href="https://wa.me/2349050566099">Get a Website</a>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+ </div>
+</header>
+
+<main id="home">
+<section class="hero">
+ <div class="wrap">
+  <h1>Websites that work for your business.</h1>
+  <p>Trotpen Tech Agency builds modern, mobile-friendly websites in Abuja that help small businesses look professional, reach more customers and get contacted faster.</p>
+  <div class="row">
+   <a class="btn" href="https://wa.me/2349050566099?text=Hello%20Trotpen%20Tech%20Agency%2C%20I'd%20like%20to%20discuss%20a%20website%20for%20my%20business.">Start your website</a>
+   <a class="btn ghost" href="#portfolio">View our work</a>
+  </div>
+  <ul class="ticks">
+   <li>Mobile responsive</li><li>Modern design</li><li>WhatsApp integration</li><li>Fast and lightweight</li><li>Business focused</li>
+  </ul>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <h2>What we build</h2>
+  <p class="lead">Professional websites designed around your business, your customers and your goals.</p>
+  <div class="grid">
+   <div class="card"><h3>Business websites</h3><p>Clearly present your services, location and contact information.</p></div>
+   <div class="card"><h3>Landing pages</h3><p>Focused pages built around one product, service, campaign or offer.</p></div>
+   <div class="card"><h3>E-commerce websites</h3><p>Online stores that showcase products and receive orders.</p></div>
+   <div class="card"><h3>Restaurant and catering websites</h3><p>Menu-driven sites with galleries, locations and ordering buttons.</p></div>
+   <div class="card"><h3>Service business websites</h3><p>For consultants, salons, logistics, real estate and other service providers.</p></div>
+   <div class="card"><h3>Website redesign</h3><p>Modern redesigns for outdated or poorly structured websites.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="why">
+ <div class="wrap">
+  <h2>A stronger first impression</h2>
+  <p class="lead">Customers often search online before they contact a business. A clear, professional website helps them trust you and reach you faster.</p>
+  <div class="grid">
+   <div class="card"><h3>Mobile-first design</h3><p>Works beautifully on smartphones, tablets and desktops.</p></div>
+   <div class="card"><h3>Business-focused structure</h3><p>Clear information and buttons that show visitors what you offer.</p></div>
+   <div class="card"><h3>WhatsApp integration</h3><p>Visitors message you directly in one tap, with a pre-filled message.</p></div>
+   <div class="card"><h3>Fast and clean build</h3><p>Lightweight, responsive sites built with clean front-end code.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="portfolio">
+ <div class="wrap">
+  <h2>Selected websites and concepts</h2>
+  <p class="lead">Live sites you can open now, plus concepts that are still in progress.</p>
+  <div class="grid">
+   <div class="card"><span class="tag">Language services and coaching</span><h3>La Traduction Concepts</h3><p>A professional site for French language education, fluency programs and exam preparation such as DELF, DALF, TCF and TEF.</p><a class="btn" target="_blank" rel="noopener" href="https://latraduction-concepts.github.io/latraductionconcepts/">View project</a></div>
+   <div class="card"><span class="tag">Food and catering</span><h3>Virtuous Link Kitchen</h3><p>A homemade food and catering site in Lugbe, Abuja, with WhatsApp ordering and catering enquiries.</p><a class="btn" target="_blank" rel="noopener" href="https://trotpensdiary1-create.github.io/virtuous-link/">View project</a></div>
+   <div class="card"><span class="tag">Local service business</span><h3>Deco Mechanical Plumbing</h3><p>A trust-focused site with quick call, WhatsApp and quote request options.</p><a class="btn" target="_blank" rel="noopener" href="https://trotpensdiary1-create.github.io/deco-mechanical-plumbing/">View project</a></div>
+   <div class="card"><span class="tag">Events and weddings</span><h3>Ivy-Lil'Beth Concepts</h3><p>A premium event planning site for weddings and celebrations in Abuja, built to turn visitors into consultations.</p><a class="btn" target="_blank" rel="noopener" href="https://ivy-lil-beth.bolt.host/">View project</a></div>
+   <div class="card"><span class="tag">Real estate</span><h3>Real Estate Agency</h3><p>A listings-style concept for showcasing properties and capturing enquiries.</p><span class="soon">Coming soon</span></div>
+   <div class="card"><span class="tag">Photography</span><h3>Photography Studio</h3><p>A gallery-first concept that lets the work lead and makes booking simple.</p><span class="soon">Coming soon</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="process">
+ <div class="wrap">
+  <h2>From idea to launch</h2>
+  <p class="lead">Four simple steps, with your approval before anything goes live.</p>
+  <div class="steps">
+   <div class="card"><h3>Discover</h3><p>We learn about your business, customers and website goals.</p></div>
+   <div class="card"><h3>Design</h3><p>We create the website structure and visual direction.</p></div>
+   <div class="card"><h3>Build</h3><p>We develop the responsive website and add the features you need.</p></div>
+   <div class="card"><h3>Launch</h3><p>After your review and approval, your website goes live.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="packages">
+ <div class="wrap">
+  <h2>Simple website packages</h2>
+  <p class="lead">Final pricing depends on the number of pages, features, content and complexity.</p>
+  <div class="grid">
+   <div class="card"><h3>Starter website</h3><div class="price">From ₦80,000</div><ul><li>1–5 pages</li><li>Responsive design</li><li>WhatsApp button</li><li>Contact form</li><li>Google Maps</li><li>Social links</li><li>Basic SEO</li><li>Deployment</li></ul><a class="btn ghost" href="#contact">Request a quote</a></div>
+   <div class="card hot"><h3>Business website</h3><div class="price">From ₦150,000</div><ul><li>Up to 8–10 pages</li><li>Premium custom design</li><li>WhatsApp integration</li><li>Contact forms</li><li>Gallery and testimonials</li><li>Services/products section</li><li>Basic SEO</li><li>Deployment</li></ul><a class="btn" href="#contact">Request a quote</a></div>
+   <div class="card"><h3>Premium website</h3><div class="price">From ₦300,000</div><ul><li>Custom UI/UX</li><li>Advanced pages and animations</li><li>Booking/enquiry features</li><li>Product/service catalog</li><li>SEO foundations</li><li>Analytics setup</li><li>Performance optimization</li><li>Professional deployment</li></ul><a class="btn ghost" href="#contact">Request a quote</a></div>
+  </div>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="wrap">
+  <h2>Questions, answered</h2>
+  <p class="lead">Can't find your question? Message us on WhatsApp.</p>
+  <details><summary>How much does a website cost?</summary><p>Packages start from ₦80,000. The final price depends on pages, features, content and complexity. Message us your requirements for a clear quote.</p></details>
+  <details><summary>How long does a website take to build?</summary><p>It depends on the size of the project and how quickly content and feedback come in. We agree a timeline before we start.</p></details>
+  <details><summary>Do you build websites for small businesses?</summary><p>Yes. Small and medium-sized local businesses are our main focus, starting in Abuja.</p></details>
+  <details><summary>Will my website work on phones?</summary><p>Yes. Every website is built mobile-first and tested on smartphones, tablets and desktops.</p></details>
+  <details><summary>Can customers contact me through WhatsApp?</summary><p>Yes. We add WhatsApp buttons with a pre-filled message so customers reach you in one tap.</p></details>
+  <details><summary>Can you redesign my existing website?</summary><p>Yes. We modernise the design, improve the structure and make it work better on mobile.</p></details>
+  <details><summary>Can you help me put my website online?</summary><p>Yes. Deployment is included in every package, and we can help you set up hosting and a domain.</p></details>
+  <details><summary>Do I need to provide my own domain?</summary><p>No. You can bring your own, or we can help you choose and set one up.</p></details>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="cta">
+   <h2>Ready to take your business online?</h2>
+   <p>Tell us about your business and what you want your website to achieve.</p>
+   <div class="row">
+    <a class="btn wa" href="https://wa.me/2349050566099?text=Hello%20Trotpen%20Tech%20Agency%2C%20I'd%20like%20to%20discuss%20a%20website%20for%20my%20business.">Chat with Trotpen</a>
+    <a class="btn ghost" href="tel:+2349050566099">Call 0905 056 6099</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <h2>Let's talk</h2>
+  <p class="lead">Trotpen Tech Agency, Abuja, Nigeria · <a href="tel:+2349050566099">09050566099</a></p>
+  <form id="f">
+   <div class="two">
+    <label>Name<input name="name" required></label>
+    <label>Business name<input name="biz"></label>
+    <label>Email<input type="email" name="email"></label>
+    <label>Phone<input type="tel" name="phone" required></label>
+    <label>Website type<select name="type"><option>Business website</option><option>Restaurant / catering</option><option>Landing page</option><option>E-commerce</option><option>Service business</option><option>Real estate</option><option>School / church / organization</option><option>Website redesign</option><option>Other</option></select></label>
+    <label>Budget<select name="budget"><option>Not sure yet</option><option>₦80,000 – ₦150,000</option><option>₦150,000 – ₦300,000</option><option>₦300,000+</option></select></label>
+   </div>
+   <label>Project details<textarea name="details" rows="4"></textarea></label>
+   <button class="btn" type="submit">Send project request</button>
+   <p class="note">This opens WhatsApp with your request ready to send.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div><strong>Trotpen Tech Agency</strong><br>Abuja, Nigeria</div>
+  <div><a href="tel:+2349050566099">09050566099</a><br><a href="https://wa.me/2349050566099">WhatsApp</a></div>
+  <div>© 2026 Trotpen Tech Agency. All rights reserved.</div>
+ </div>
+</footer>
+
+<script>
+var m=document.getElementById('menu'),l=document.getElementById('links');
+m.onclick=function(){var o=l.classList.toggle('open');m.setAttribute('aria-expanded',o)};
+l.onclick=function(e){if(e.target.tagName==='A'){l.classList.remove('open');m.setAttribute('aria-expanded','false')}};
+document.getElementById('f').onsubmit=function(e){
+ e.preventDefault();var d=new FormData(e.target);
+ var t="Hello Trotpen Tech Agency, I'd like a website.\nName: "+d.get('name')+"\nBusiness: "+(d.get('biz')||'-')+"\nPhone: "+d.get('phone')+"\nEmail: "+(d.get('email')||'-')+"\nType: "+d.get('type')+"\nBudget: "+d.get('budget')+"\nDetails: "+(d.get('details')||'-');
+ window.open('https://wa.me/2349050566099?text='+encodeURIComponent(t),'_blank');
+};
+</script>
+</body>
+</html>
